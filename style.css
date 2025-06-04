@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Fashion Fetish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.029vw;
+}
+hr {
+    border: none;
+    border-top: 3px solid #894531;
+    width: 100%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* ora lo spazio è tra titolo e RSVP */
+  height: 80px;
+  box-sizing: border-box;
+  padding: 1.5em 20px;
+}
+
+.title {
+  text-align: center;
+  flex-grow: 1;
+}
+
+
+#rsvp_link {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap; /* evita che si spezzi su più righe */
+}
+
+h1{
+    font-weight: normal;
+}
+
+
