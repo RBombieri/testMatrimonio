@@ -53,6 +53,9 @@ h1{
 h2 {
     font-weight: normal;
 }
+h3{
+    font-weight: normal;
+}
 .adelia{
     font-family: 'Adelia', serif;
 }
@@ -65,4 +68,13 @@ h2 {
     margin: 1em 0;
 }
 
+#info{
+    color: white;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
