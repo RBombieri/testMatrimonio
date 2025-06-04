@@ -81,15 +81,15 @@ h3{
 #info {
   color: white;
   display: flex;
-  flex-direction: column; /* mantieni le sezioni in colonna */
-  align-items: center;    /* centra orizzontalmente */
+  flex-direction: column;
+  align-items: center;
 }
 
 .section {
   display: flex;
-  flex-direction: row;  /* è il default, ma lo mettiamo per chiarezza */
-  align-items: center;  /* allinea verticalmente al centro */
-  gap: 1em;             /* spazio tra immagine e testo */
+  flex-direction: row; 
+  align-items: center;  
+  gap: 1em;            
 }
 
 
