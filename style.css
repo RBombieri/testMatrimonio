@@ -25,27 +25,37 @@ hr {
     width: 100%;
 }
 .header {
+  margin: 2vw 0vw 2vw 0vw;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; /* ora lo spazio è tra titolo e RSVP */
   height: 4.167vw;
+  position: relative;
   box-sizing: border-box;
-  padding: 1.5em 20px;
+  padding: 1em; /* margine interno */
 }
+
 
 .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  flex-grow: 1;
 }
 
-
+.rsvp_link {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 #rsvp_link {
-  text-decoration: none;
-  color: inherit;
-  white-space: nowrap; /* evita che si spezzi su più righe */
+  text-decoration: none; 
+  color: inherit;         
+  font-weight: normal;   
 }
+
+
+
 
 h1{
     font-weight: normal;
@@ -68,13 +78,18 @@ h3{
     margin: 1em 0;
 }
 
-#info{
-    color: white;
+#info {
+  color: white;
+  display: flex;
+  flex-direction: column; /* mantieni le sezioni in colonna */
+  align-items: center;    /* centra orizzontalmente */
 }
 
-.section{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.section {
+  display: flex;
+  flex-direction: row;  /* è il default, ma lo mettiamo per chiarezza */
+  align-items: center;  /* allinea verticalmente al centro */
+  gap: 1em;             /* spazio tra immagine e testo */
 }
+
 
