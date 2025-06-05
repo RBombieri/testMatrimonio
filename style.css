@@ -10,21 +10,22 @@ html {
 }
 
 body{
-    margin: 0;
+    margin: 1em 0 0 0;
     font-family: 'Fashion Fetish', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 0;
-    font-size: 2.029vw;
+    font-size: 1.51vw;
 }
 hr {
     border: none;
-    border-top: 0.156vw solid #894531;
+    border-top: 0.208vw solid #894531;
     width: 100%;
 }
 .header {
+  font-size: 2.031vw;
   margin: 2vw 0vw 2vw 0vw;
   width: 100%;
   height: 4.167vw;
@@ -32,7 +33,6 @@ hr {
   box-sizing: border-box;
   padding: 1em; /* margine interno */
 }
-
 
 .title {
   position: absolute;
@@ -51,20 +51,69 @@ hr {
 #rsvp_link {
   text-decoration: none; 
   color: inherit;         
-  font-weight: normal;   
+  font-weight: normal;
+  border: 0.052vw solid black;
+  padding: 0.30em 0.4em 0.10em 0.4em; /* Più padding in alto, meno in basso */
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: inherit;
 }
-
-
-
 
 h1{
+    padding-top: 1em;
+    font-size: 4.063vw;
     font-weight: normal;
+    margin-bottom: clamp(0.3em, 0.8vw, 0.8em); /* Valore minimo, preferito, massimo */
 }
+#save_the_date_sub {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+/* Sezione DATE con layout personalizzato */
+.date-section {
+    font-size: 3.385vw;
+    position: relative;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.date-section h2 {
+    font-weight: normal;
+    /*margin: 0.3em 0;*/
+    position: relative;
+}
+
+.date-section .serena {
+    text-align: right;
+    left: -15%;
+}
+
+.date-section .e-center {
+    text-align: center;
+}
+
+.date-section .andrea {
+    text-align: right;
+    left: -65%;
+}
+
+.date-section .date {
+    text-align: right;
+    left: -20%;
+}
+
 h2 {
     font-weight: normal;
 }
 h3{
     font-weight: normal;
+}
+p {
+    line-height: 1.2;
 }
 .adelia{
     font-family: 'Adelia', serif;
@@ -73,9 +122,35 @@ h3{
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 5em;
     font-size: 3.5vw;
     margin: 1em 0;
+    padding-bottom: 1.160em;
+}
+
+.countdown strong {
+    font-size: 7.813vw;
+    font-weight: normal;
+}
+
+.countdown div {
+    font-size: 1.7vw;
+    line-height: 2;
+}
+
+/* Spaziatura per il form RSVP */
+#form label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#form input[type="text"] {
+    margin-bottom: 1em;
+}
+
+#form input[type="radio"] {
+    margin-bottom: 0.5em;
 }
 
 #info {
@@ -91,5 +166,3 @@ h3{
   align-items: center;  
   gap: 1em;            
 }
-
-
