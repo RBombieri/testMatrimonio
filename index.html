@@ -33,7 +33,7 @@
         <h2 class="andrea">ANDREA</h2>
         <h2 class="date">04.10.2025</h2>
     </div>
-    <img src="./img/SPOSINI.png" alt="SPOSINI" style="width: 15%; height: auto;">
+    <img id="sposini" src="./img/SPOSINI_Crop.png" alt="SPOSINI" style="width: 15%; height: auto;">
 
     <!--INFO-->
     <div id="info" style="background-color: #894531;">
@@ -55,7 +55,7 @@
         <div class="section">
             <img src="./img/APERITIVO E CENA_Tavola disegno 1.png" alt="piramide di bicchieri" style="width: 15%; height: auto;">
             <div class="section_info">
-                <h3>APERITIVO E CENA</h3>
+                <h3>APERITIVO <br> E CENA</h3>
                 <p>INIZIO ORE 17.30<br>TENUTA TAMBURNIN</p>
             </div> 
         </div>
@@ -68,28 +68,40 @@
         </div>
     </div>
 
+    
     <!--RSVP-->
     <div id="rsvp">
-        <img src="./img/RSVP_Tavola disegno 1.png" alt="bottiglie con fiori" style="width: 15%; height: auto;">
-        <h3>RSVP</h3>
-        <p>CONFERMA LA TUA PRESENZA</p>
+        <div class="rsvp-header">
+            <img src="./img/RSVP_Tavola disegno 1.png" alt="bottiglie con fiori" style="width: 15%; height: auto;">
+            <div>
+                <h3>RSVP</h3>
+                <p>CONFERMA LA TUA PRESENZA</p>
+            </div>
+        </div>
+        
         <p>Siamo felici di condividere con te questo momento speciale!
         <br>Ti chiediamo gentilmente di confermare la tua partecipazione 
         <br>entro il 1° settembre 2025 compilando il modulo qui sotto.</p>
 
         <div id="form">
             <form id="rsvp-form" name="rsvp-form" method="post">
-                <label for="name">NOME E COGNOME:</label><br>
-                <input type="text" id="name" name="name" required><br>
+                <label for="name">NOME E COGNOME:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label>PARTECIPERAI AL MATRIMONIO?</label><br>
-                <input type="radio" id="si" name="box_partecipazione" value="si">
-                <label for="si">Sì, con gioia</label><br>
-                <input type="radio" id="no" name="box_partecipazione" value="no">
-                <label for="no">No, purtroppo non posso esserci</label><br>
+                <label>PARTECIPERAI AL MATRIMONIO?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" id="si" name="box_partecipazione" value="si">
+                        Sì, con gioia
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" id="no" name="box_partecipazione" value="no">
+                        No, purtroppo non posso esserci
+                    </label>
+                </div>
 
-                <label for="allergie">SEGNALA EVENTUALI ALLERGIE O INTOLLERANZE ALIMENTARI:</label><br>
-                <input type="text" id="allergie" name="allergie"><br>
+                <label for="allergie" id="allergie_label">SEGNALA EVENTUALI ALLERGIE O INTOLLERANZE ALIMENTARI:</label>
+                <input type="text" id="allergie" name="allergie">
 
                 <input type="submit" value="Invia">
             </form>
@@ -97,7 +109,7 @@
     </div>
 
     <p id="p_next_rsvp">Form da compilare per singolo invitato</p>
-    <img src="./img/FIORI_Crop.png" alt="fiori" style="width: 100%; height: auto;">
+    <img class="fiori" src="./img/FIORI_Crop.png" alt="fiori" style="width: 100%; height: auto;">
     <hr id="hr_rsvp">
 
     <!--VIAGGIO-->
@@ -112,7 +124,7 @@
         <p>INTESTATO A: Nome Cognome e Nome Cognome</p>
     </div>
     <p>Grazie di cuore per l'affetto e per accompagnarci anche così in questa nuova avventura!</p>
-    <img src="./img/FIORI_Crop.png" alt="fiori" style="width: 100%; height: auto;">
+    <img class="fiori" src="./img/FIORI_Crop.png" alt="fiori" style="width: 100%; height: auto;">
 
     <!--JavaScript-->
     <script>

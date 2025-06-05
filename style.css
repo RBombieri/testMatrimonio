@@ -63,14 +63,14 @@ hr {
 }
 
 h1{
-    padding-top: 1em;
+    padding-top: 2em;
     font-size: 4.063vw;
     font-weight: normal;
-    margin-bottom: clamp(0.3em, 0.8vw, 0.8em); /* Valore minimo, preferito, massimo */
+    margin-bottom: clamp(0.5em, 0.8vw, 0.8em); /* Valore minimo, preferito, massimo */
 }
 #save_the_date_sub {
     margin-top: 0;
-    margin-bottom: 1.5em;
+    margin-bottom: 5em;
 }
 
 /* Sezione DATE con layout personalizzato */
@@ -85,20 +85,24 @@ h1{
     font-weight: normal;
     /*margin: 0.3em 0;*/
     position: relative;
+    padding-bottom: 1em;
 }
 
 .date-section .serena {
     text-align: right;
-    left: -15%;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    left: -20%;
 }
 
 .date-section .e-center {
+    padding-bottom: 0.5em;
     text-align: center;
 }
 
 .date-section .andrea {
     text-align: right;
-    left: -65%;
+    left: -60%;
 }
 
 .date-section .date {
@@ -111,6 +115,7 @@ h2 {
 }
 h3{
     font-weight: normal;
+    line-height: 1.2;
 }
 p {
     line-height: 1.2;
@@ -138,19 +143,120 @@ p {
     line-height: 2;
 }
 
+#sposini {
+    width: 25% !important;
+    height: auto !important;
+    display: block;
+    margin: -1em 0 0 10%;
+    align-self: flex-start;
+}
+
+.fiori{
+  margin-bottom: -0.5em;
+  margin-top: 4em;
+}
+
+#rsvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2em 0;
+}
+
+#rsvp .rsvp-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+#rsvp h3 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#rsvp img {
+  width: 30% !important;
+  height: auto !important;
+}
+
 /* Spaziatura per il form RSVP */
+#form {
+  border: 0.208vw solid #894531;
+  padding: 2em;
+  margin: 2em 0;
+  text-align: left;
+  width: 80%;
+  box-sizing: border-box;
+}
+
 #form label {
     display: block;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    font-weight: normal;
+}
+
+#form label:first-child {
+    margin-top: 0;
 }
 
 #form input[type="text"] {
-    margin-bottom: 1em;
+    width: 100%;
+    border: none;
+    border-bottom: 0.052vw solid #000;
+    background: transparent;
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
 }
 
 #form input[type="radio"] {
-    margin-bottom: 0.5em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 0.781vw;
+    height: 0.781vw;
+    border: 0.052vw solid #000;
+    background: white;
+    margin-right: 0.5em;
+    margin-bottom: 0.3em;
+    vertical-align: middle;
+}
+
+#form input[type="radio"]:checked {
+    background: #000;
+}
+
+#form .radio-group {
+    margin-bottom: 1em;
+}
+
+#form .radio-option {
+    display: block;
+    margin-bottom: 0.5em; /* Cambia da -1em a 0.5em */
+    margin-top: 0.5em;    /* Aggiungi per spaziare meglio i radio button */
+}
+
+/* E mantieni questa regola per la label allergie */
+#allergie_label{
+    margin-top: 3.5em; /* Aumentato per più distanza */
+}
+
+#form input[type="submit"] {
+    background: white;
+    color: black;
+    border: 0.052vw solid #000;
+    padding: 0.8em 1.5em;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    margin-top: 1.5em;
+    float: right;
 }
 
 #info {
@@ -158,11 +264,29 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2em 0;
 }
 
 .section {
   display: flex;
   flex-direction: row; 
   align-items: center;  
-  gap: 1em;            
+  justify-content: center;
+  gap: 3em;
+  margin: 1.5em 0;
+  width: 80%;
+}
+
+.section img {
+  width: 40% !important;
+  height: auto !important;
+}
+
+.section h3 {
+  font-size: 2.5em;
+  margin: 0 0 0.5em 0;
+}
+
+.section_info {
+  text-align: center;
 }
