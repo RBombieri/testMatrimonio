@@ -31,7 +31,7 @@ hr {
   height: 4.167vw;
   position: relative;
   box-sizing: border-box;
-  padding: 1em; /* margine interno */
+  padding: 1em;
 }
 
 .title {
@@ -53,7 +53,7 @@ hr {
   color: inherit;         
   font-weight: normal;
   border: 0.052vw solid black;
-  padding: 0.30em 0.4em 0.10em 0.4em; /* Più padding in alto, meno in basso */
+  padding: 0.30em 0.4em 0.10em 0.4em; 
   display: inline-block;
   line-height: 1;
   vertical-align: middle;
@@ -66,14 +66,13 @@ h1{
     padding-top: 2em;
     font-size: 4.063vw;
     font-weight: normal;
-    margin-bottom: clamp(0.5em, 0.8vw, 0.8em); /* Valore minimo, preferito, massimo */
+    margin-bottom: clamp(0.5em, 0.8vw, 0.8em); 
 }
 #save_the_date_sub {
     margin-top: 0;
     margin-bottom: 5em;
 }
 
-/* Sezione DATE con layout personalizzato */
 .date-section {
     font-size: 3.385vw;
     position: relative;
@@ -182,7 +181,6 @@ p {
   height: auto !important;
 }
 
-/* Spaziatura per il form RSVP */
 #form {
   border: 0.208vw solid #894531;
   padding: 2em;
@@ -238,13 +236,12 @@ p {
 
 #form .radio-option {
     display: block;
-    margin-bottom: 0.5em; /* Cambia da -1em a 0.5em */
-    margin-top: 0.5em;    /* Aggiungi per spaziare meglio i radio button */
+    margin-bottom: 0.5em; 
+    margin-top: 0.5em;    
 }
 
-/* E mantieni questa regola per la label allergie */
 #allergie_label{
-    margin-top: 3.5em; /* Aumentato per più distanza */
+    margin-top: 3.5em;
 }
 
 #form input[type="submit"] {
