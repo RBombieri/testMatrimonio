@@ -114,10 +114,10 @@ h2 {
 }
 h3{
     font-weight: normal;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 p {
-    line-height: 1.2;
+    line-height: 1.5;
 }
 .adelia{
     font-family: 'Adelia', serif;
@@ -183,7 +183,7 @@ p {
 
 #form {
   border: 0.208vw solid #894531;
-  padding: 2em;
+  padding: 3em 2em; /* Più padding in alto e in basso */
   margin: 2em 0;
   text-align: left;
   width: 80%;
@@ -192,7 +192,7 @@ p {
 
 #form label {
     display: block;
-    margin-top: 1.5em;
+    margin-top: 2.5em;
     margin-bottom: 0.8em;
     font-weight: normal;
 }
@@ -202,15 +202,16 @@ p {
 }
 
 #form input[type="text"] {
-    width: 100%;
+    width: 85%;
     border: none;
     border-bottom: 0.052vw solid #000;
     background: transparent;
-    padding: 0.5em 0;
+    padding: 0.7em 0 0.3em 0; /* Aumentato padding superiore per evitare taglio lettere */
     margin-bottom: 0.5em;
     font-family: inherit;
     font-size: inherit;
     outline: none;
+    line-height: 1.5;
 }
 
 #form input[type="radio"] {
@@ -219,7 +220,7 @@ p {
     -moz-appearance: none;
     width: 0.781vw;
     height: 0.781vw;
-    border: 0.052vw solid #000;
+    border: 0.026vw solid #000; /* Bordo più fine */
     background: white;
     margin-right: 0.5em;
     margin-bottom: 0.3em;
@@ -241,19 +242,19 @@ p {
 }
 
 #allergie_label{
-    margin-top: 3.5em;
+    margin-top: 4.5em;
 }
 
 #form input[type="submit"] {
     background: white;
     color: black;
-    border: 0.052vw solid #000;
+    border: 0.026vw solid #000; /* Bordo più fine */
     padding: 0.8em 1.5em;
     font-family: inherit;
     font-size: inherit;
     cursor: pointer;
-    margin-top: 1.5em;
     float: right;
+    margin-top: 6em;
 }
 
 #info {
@@ -269,7 +270,7 @@ p {
   flex-direction: row; 
   align-items: center;  
   justify-content: center;
-  gap: 3em;
+  gap: 5em;
   margin: 1.5em 0;
   width: 80%;
 }
@@ -286,4 +287,121 @@ p {
 
 .section_info {
   text-align: center;
+}
+
+
+#viaggio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2em 0;
+}
+
+#viaggio .viaggio-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+#viaggio h3 {
+  font-size: 2.5em;
+  margin: 0;
+}
+.viaggio-header img {
+  width: 30% !important;
+  height: auto !important;
+  margin-bottom: 4em;
+}
+
+#viaggio #info_iban{
+  margin: 3em 0;
+  text-align: left; 
+}
+
+#viaggio .fiori{
+  margin-bottom: -4em;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  h1{
+    font-size: 4.922vw;
+  }
+  /* Increase font size for paragraphs on mobile */
+  p {
+    font-size: 1.8vw;
+    line-height: 1.9;
+  }
+  
+  /* Form styling per mobile - esattamente come nel PDF */
+  #form {
+    padding: 4em 2em 2em 2em; /* Più padding in alto e in basso anche su mobile */
+    width: 90%;
+  }
+  
+  /* Spaziatura compatta tra label e input come nel PDF */
+  #form label:not(.radio-option) {
+    margin-top: 2.5em;
+    margin-bottom: 0.3em; /* Molto ridotto per essere vicino all'input */
+    font-size: 1.8vw;
+  }
+  
+  #form label:first-child {
+    margin-top: 0;
+  }
+
+  #form .radio-group {
+    margin-top: 2em;
+  }
+  
+  #allergie_label {
+    margin-top: 3.5em;
+  }
+  
+  /* Input text compatti come nel PDF */
+  #form input[type="text"] {
+    padding: 1em 0 0.4em 0; /* Aumentato padding superiore per evitare taglio lettere */
+    line-height: 1.5;
+    font-size: 1.6vw;
+    margin-bottom: 0.2em;
+    height: 2vw;
+  }
+  
+  /* Radio buttons delle dimensioni giuste */
+  #form input[type="radio"] {
+    width: 1.8vw;
+    height: 1.8vw;
+    border-width: 0.15vw; /* Bordo più fine */
+    margin-right: 0.8em;
+  }
+  
+  /* Radio options con spacing corretto */
+  #form .radio-option {
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    font-size: 1.8vw;
+  }
+  
+  /* Submit button dimensioni corrette come nel PDF */
+  #form input[type="submit"] {
+    margin-top: 6em;
+    font-size: 1.8vw;
+    padding: 0.8em 2em;
+    float: right;
+    border-width: 0.15vw; /* Bordo più fine */
+  }
+
+  #viaggio .viaggio-header{
+    margin-bottom: 3em;
+  }
+  #viaggio #info_iban{
+    margin: 6em 0;
+    text-align: left; 
+  }
+  #viaggio .fiori{
+  margin-top: 12em;
+}
 }
