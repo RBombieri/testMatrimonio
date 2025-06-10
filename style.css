@@ -183,7 +183,7 @@ p {
 
 #form {
   border: 0.208vw solid #894531;
-  padding: 3em 2em; /* Più padding in alto e in basso */
+  padding: 3em 2em;
   margin: 2em 0;
   text-align: left;
   width: 80%;
@@ -206,7 +206,7 @@ p {
     border: none;
     border-bottom: 0.052vw solid #000;
     background: transparent;
-    padding: 0.7em 0 0.3em 0; /* Aumentato padding superiore per evitare taglio lettere */
+    padding: 0.7em 0 0.3em 0;
     margin-bottom: 0.5em;
     font-family: inherit;
     font-size: inherit;
@@ -220,7 +220,7 @@ p {
     -moz-appearance: none;
     width: 0.781vw;
     height: 0.781vw;
-    border: 0.026vw solid #000; /* Bordo più fine */
+    border: 0.026vw solid #000;
     background: white;
     margin-right: 0.5em;
     margin-bottom: 0.3em;
@@ -248,7 +248,7 @@ p {
 #form input[type="submit"] {
     background: white;
     color: black;
-    border: 0.026vw solid #000; /* Bordo più fine */
+    border: 0.026vw solid #000;
     padding: 0.8em 1.5em;
     font-family: inherit;
     font-size: inherit;
@@ -325,27 +325,24 @@ p {
   margin-bottom: -4em;
 }
 
-/* Media Queries for Mobile */
+/*Mobile*/
 @media (max-width: 768px) {
   h1{
     font-size: 4.922vw;
   }
-  /* Increase font size for paragraphs on mobile */
   p {
     font-size: 1.8vw;
     line-height: 1.9;
   }
   
-  /* Form styling per mobile - esattamente come nel PDF */
   #form {
-    padding: 4em 2em 2em 2em; /* Più padding in alto e in basso anche su mobile */
+    padding: 4em 2em 2em 2em;
     width: 90%;
   }
   
-  /* Spaziatura compatta tra label e input come nel PDF */
   #form label:not(.radio-option) {
     margin-top: 2.5em;
-    margin-bottom: 0.3em; /* Molto ridotto per essere vicino all'input */
+    margin-bottom: 0.3em;
     font-size: 1.8vw;
   }
   
@@ -361,37 +358,33 @@ p {
     margin-top: 3.5em;
   }
   
-  /* Input text compatti come nel PDF */
   #form input[type="text"] {
-    padding: 1em 0 0.4em 0; /* Aumentato padding superiore per evitare taglio lettere */
+    padding: 1em 0 0.4em 0;
     line-height: 1.5;
     font-size: 1.6vw;
     margin-bottom: 0.2em;
     height: 2vw;
   }
   
-  /* Radio buttons delle dimensioni giuste */
   #form input[type="radio"] {
     width: 1.8vw;
     height: 1.8vw;
-    border-width: 0.15vw; /* Bordo più fine */
+    border-width: 0.15vw;
     margin-right: 0.8em;
   }
   
-  /* Radio options con spacing corretto */
   #form .radio-option {
     margin-bottom: 0.5em;
     margin-top: 0.3em;
     font-size: 1.8vw;
   }
   
-  /* Submit button dimensioni corrette come nel PDF */
   #form input[type="submit"] {
     margin-top: 6em;
     font-size: 1.8vw;
     padding: 0.8em 2em;
     float: right;
-    border-width: 0.15vw; /* Bordo più fine */
+    border-width: 0.15vw;
   }
 
   #viaggio .viaggio-header{
